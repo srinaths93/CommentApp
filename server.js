@@ -35,7 +35,7 @@ router.get('/', function(req, res) {
     res.json({ message: 'API Initialized!'});
    });
 
-router.route('/comments',commentroute);
+router.use('/comments',commentroute);
 
 app.use('/api', router);
 
